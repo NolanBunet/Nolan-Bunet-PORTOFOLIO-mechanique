@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Professionnel - Nolan BUNET</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; background-color: #f8fafc; }
+        .hero-gradient { background: linear-gradient(135deg, #0f766e 0%, #042f2e 100%); }
+        .card-shadow { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white; color: black; font-size: 12pt; }
+            .hero-gradient { background: white !important; color: black !important; border-bottom: 3px solid #0f766e; padding-top: 0 !important; padding-bottom: 20px !important; }
+            .text-white { color: black !important; }
+            .text-teal-100, .text-teal-50, .text-teal-300 { color: #334155 !important; }
+            .card-shadow { border: 1px solid #cbd5e1; box-shadow: none; break-inside: avoid; margin-bottom: 1rem; }
+            .print-border { border: 1px solid #cbd5e1; }
+            .bg-slate-50, .bg-teal-50 { background-color: white !important; }
+            /* Force colors for the progress bars */
+            .bg-red-500 { background-color: #ef4444 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .bg-green-500 { background-color: #22c55e !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .bg-slate-200 { background-color: #e2e8f0 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            section { page-break-inside: avoid; padding: 20px 0 !important; }
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <!-- Floating Print Button for Mobile/Desktop -->
+    <div class="fixed bottom-6 right-6 z-50 no-print">
+        <button onclick="window.print()" class="bg-teal-600 hover:bg-teal-700 text-white rounded-full p-4 shadow-2xl flex items-center justify-center transition-transform hover:scale-105 border-2 border-white">
+            <i class="fas fa-file-pdf text-xl mr-2"></i> <span class="font-bold">Sauvegarder PDF</span>
+        </button>
+    </div>
+
+    <!-- Top Badge -->
+    <div class="bg-slate-900 text-white text-center py-2 text-xs font-bold uppercase tracking-widest no-print">
+        <i class="fas fa-check-circle text-green-400 mr-2"></i> Dossier de présentation pour France Travail
+    </div>
+
+    <!-- Header Section -->
+    <header class="hero-gradient text-white pt-16 pb-16 lg:pt-24 lg:pb-20 px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 mb-6 text-xs font-bold tracking-wider text-teal-900 uppercase bg-teal-100 rounded-full">
+                Demande de Financement Permis B
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight">
+                Nolan BUNET
+            </h1>
+            <h2 class="text-2xl md:text-3xl text-teal-300 font-semibold mb-6">
+                Projet Professionnel : Aidant à Domicile
+            </h2>
+            
+            <div class="flex flex-wrap gap-4 text-teal-50 text-sm md:text-base mb-8 bg-white/10 p-4 rounded-xl backdrop-blur-sm border border-white/20 inline-block">
+                <div class="flex items-center gap-2"><i class="fas fa-calendar text-teal-300"></i> 19 ans</div>
+                <div class="hidden sm:block text-teal-400/50">|</div>
+                <div class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-teal-300"></i> 97115 Sainte-Rose</div>
+                <div class="hidden sm:block text-teal-400/50">|</div>
+                <div class="flex items-center gap-2"><i class="fas fa-phone text-teal-300"></i> 06 91 28 93 60</div>
+                <div class="hidden sm:block text-teal-400/50">|</div>
+                <div class="flex items-center gap-2"><i class="fas fa-envelope text-teal-300"></i> bunetnolan@icloud.com</div>
+            </div>
+
+            <p class="text-lg text-teal-100 max-w-2xl leading-relaxed font-medium">
+                Fort d'une expérience concrète en résidence senior, mon objectif est d'accompagner les personnes fragiles à leur domicile sur la zone Sainte-Rose / Baie-Mahault. <br>
+                <span class="bg-teal-800 text-white px-2 py-1 rounded mt-2 inline-block">Le seul frein à mon insertion durable est la mobilité.</span>
+            </p>
+        </div>
+    </header>
+
+    <!-- CRITICAL SECTION: The ROI for France Travail -->
+    <section class="py-12 px-4 sm:px-6 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl card-shadow border-l-8 border-red-500 p-6 md:p-8 relative overflow-hidden print-border">
+                <div class="absolute top-0 right-0 bg-red-100 text-red-800 px-4 py-1 rounded-bl-lg font-bold text-xs uppercase tracking-widest border-b border-l border-red-200">
+                    Problématique
+                </div>
+                
+                <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                    <i class="fas fa-route text-slate-400 mr-3"></i> L'impact du Permis B sur mon employabilité
+                </h2>
+
+                <p class="text-slate-600 mb-6 font-medium">
+                    Trajet ciblé : <strong class="text-slate-900">Sainte-Rose ➔ Baie-Mahault</strong> (Bassin d'emploi principal)
+                </p>
+
+                <div class="space-y-6 mb-8">
+                    <!-- Bus Case -->
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                        <div class="flex justify-between text-sm font-bold mb-2">
+                            <span class="text-red-700"><i class="fas fa-bus mr-2"></i>Situation actuelle (Transports en commun)</span>
+                            <span class="text-red-700 text-lg">1h30 min</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-8 overflow-hidden">
+                            <div class="bg-red-500 h-8 flex items-center justify-end px-3 text-white text-xs font-bold w-full">
+                                Trajet trop long = Incompatible avec horaires décalés
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Car Case -->
+                    <div class="bg-teal-50 p-4 rounded-xl border border-teal-100">
+                        <div class="flex justify-between text-sm font-bold mb-2">
+                            <span class="text-green-700"><i class="fas fa-car mr-2"></i>Projection avec Permis B</span>
+                            <span class="text-green-700 text-lg">30 min</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-8 overflow-hidden">
+                            <div class="bg-green-500 h-8 flex items-center justify-start px-3 text-white text-xs font-bold" style="width: 33%">
+                                Accès immédiat à l'emploi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 text-white p-6 rounded-xl text-center">
+                    <h3 class="font-bold text-lg mb-2">Conclusion Financière</h3>
+                    <p class="text-slate-300 text-sm">
+                        Financer ce permis, c'est me faire gagner <strong class="text-white bg-slate-700 px-2 py-0.5 rounded">10 heures de disponibilité par semaine</strong> et me permettre d'accepter des CDI en horaires décalés (essentiels dans l'aide à la personne).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Focus on Seniors) -->
+    <section class="py-12 px-4 sm:px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center">
+                <i class="fas fa-briefcase text-teal-600 mr-3"></i> Expériences & Compétences Validées
+            </h2>
+
+            <div class="grid md:grid-cols-12 gap-6">
+                
+                <!-- The Core Experience (Takes more space) -->
+                <div class="md:col-span-12">
+                    <div class="bg-teal-600 text-white p-6 rounded-2xl card-shadow border-2 border-teal-500 relative print-border">
+                        <div class="absolute -top-3 right-6 bg-yellow-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                            <i class="fas fa-star mr-1"></i> Vocation confirmée
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <h3 class="text-xl font-bold">Employé Polyvalent - Secteur Senior</h3>
+                                <p class="text-teal-100 font-medium">Les Iles d'Or (Résidence Service) • Mai - Juin 2024</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 bg-teal-700/50 p-4 rounded-lg">
+                            <ul class="space-y-2 text-sm text-teal-50">
+                                <li><i class="fas fa-check-circle text-green-400 mr-2"></i> Contact direct, constant et bienveillant avec des personnes âgées.</li>
+                                <li><i class="fas fa-check-circle text-green-400 mr-2"></i> Service en salle et gestion des besoins spécifiques liés à l'âge.</li>
+                                <li><i class="fas fa-check-circle text-green-400 mr-2"></i> <strong>Bilan :</strong> Cette expérience a forgé ma volonté de m'orienter vers l'aide à domicile. J'ai acquis la patience et l'écoute nécessaires.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Experiences (Shows resilience and hard work) -->
+                <div class="md:col-span-6">
+                    <div class="bg-white p-6 rounded-2xl card-shadow h-full print-border">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="bg-slate-100 p-2 rounded-lg text-slate-500"><i class="fas fa-utensils"></i></div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Commis de Cuisine</h3>
+                                <p class="text-xs font-bold text-teal-600">Chez Lélette • Nov 2024 - Mars 2025</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-600 mt-3">Mise en place, respect strict des normes d'hygiène et nettoyage rigoureux de l'espace de travail.</p>
+                        <div class="mt-3 text-xs font-bold text-slate-400 uppercase tracking-wide">Atout : Rigueur & Hygiène</div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-6">
+                    <div class="bg-white p-6 rounded-2xl card-shadow h-full print-border">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="bg-slate-100 p-2 rounded-lg text-slate-500"><i class="fas fa-hamburger"></i></div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Serveur & Équipier (Nuit / Rush)</h3>
+                                <p class="text-xs font-bold text-teal-600">Pub St Aubin & McDonald's • 2023 - 2024</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-600 mt-3">Gestion de la pression lors des pics d'affluence, encaissement, et travail de nuit/horaires décalés.</p>
+                        <div class="mt-3 text-xs font-bold text-slate-400 uppercase tracking-wide">Atout : Résistance & Flexibilité</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Summary -->
+    <section class="py-12 px-4 sm:px-6 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                <i class="fas fa-clipboard-check text-teal-600 mr-3"></i> Synthèse du Profil
+            </h2>
+            <div class="flex flex-wrap gap-3">
+                <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-semibold border border-slate-200"><i class="fas fa-users mr-2 text-slate-400"></i>Aisance relationnelle</span>
+                <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-semibold border border-slate-200"><i class="fas fa-heart mr-2 text-slate-400"></i>Gestion des émotions</span>
+                <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-semibold border border-slate-200"><i class="fas fa-clock mr-2 text-slate-400"></i>Ponctualité stricte</span>
+                <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-semibold border border-slate-200"><i class="fas fa-tasks mr-2 text-slate-400"></i>Bonne organisation</span>
+                <span class="px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-semibold border border-slate-200"><i class="fas fa-hands-helping mr-2 text-slate-400"></i>Polyvalence</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm no-print">
+        <p>Document généré pour l'entretien Pôle Emploi / France Travail de Nolan BUNET.</p>
+    </footer>
+
+</body>
+</html>
+
+
